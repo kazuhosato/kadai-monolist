@@ -111,3 +111,10 @@ footer {
 .user-profile .status ul li .status-value {
     font-size: 18px;
 }
+.have .panel-body {
+    height: 120px;
+}
+.have .buttons form {
+    display: inline-block;
+    margin: 0 5px;
+}

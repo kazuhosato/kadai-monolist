@@ -30,5 +30,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::resource('items', 'ItemsController', ['only' => ['create', 'show']]);
     Route::post('want', 'ItemsUsersController@want')->name('item_user.want');
     Route::delete('want', 'ItemsUsersController@dont_want')->name('item_user.dont_want');
+     Route::post('have', 'ItemsUsersController@have')->name('item_user.have');
+    Route::delete('have', 'ItemsUsersController@dont_have')->name('item_user.dont_have');
     Route::resource('users', 'UsersController', ['only' => ['show']]);
 });
